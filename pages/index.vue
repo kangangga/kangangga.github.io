@@ -15,7 +15,7 @@
 
         <div>
           <p class="text-slate-800 mt-4 text-sm md:text-base">
-            “Profesional TI yang berorientasi detail dengan pengalaman 8 tahun
+            “Profesional IT yang berorientasi detail dengan pengalaman 8 tahun
             sebagai software engineer specialist dan system/network engineer.”
           </p>
         </div>

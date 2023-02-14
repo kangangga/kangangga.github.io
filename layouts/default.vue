@@ -1,10 +1,5 @@
 <template>
   <div class="antialiased scroll-smooth">
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script> -->
-    </Head>
-
     <AppHeader />
     <slot />
     <AppFooter />
@@ -26,6 +21,13 @@ useServerSeoMeta({
   twitterCard: "summary_large_image",
   ogImage: "https://kangangga.github.io/img/angga.png",
   icon: "https://kangangga.github.io/img/favicon.ico",
+  link: [
+    {
+      rel: "canonical",
+      href: "https://kangangga.github.io/",
+    },
+    { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
+  ],
 });
 
 // useHead({
