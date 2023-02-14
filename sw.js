@@ -1,4 +1,4 @@
-const options = {"autoRegister":true,"cacheOptions":{"directoryIndex":"/","revision":"6YY9H8akDo9n"},"enabled":true,"preCaching":[],"templatePath":null,"workboxVersion":"6.5.3","workboxUrl":"https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js"}
+const options = {"autoRegister":true,"cacheOptions":{"directoryIndex":"/","revision":"5XkapKsY1tvA"},"enabled":true,"preCaching":[],"templatePath":null,"workboxVersion":"6.5.3","workboxUrl":"https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js"}
 
 importScripts(options.workboxUrl)
 
