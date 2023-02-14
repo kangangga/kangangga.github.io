@@ -28,7 +28,8 @@ export default defineNuxtConfig({
       charset: "utf-16",
       viewport: "width=device-width, initial-scale=1.0",
       meta: [
-        { name: "description", content: me.description },
+        { name: "keywords", content: me.keywords },
+        // { name: "description", content: me.description },
         {
           name: "theme-color",
           media: "(prefers-color-scheme: dark)",
@@ -43,22 +44,18 @@ export default defineNuxtConfig({
           name: "google-site-verification",
           content: "077gzx1Lk-1iZJlyBEudhUr0JlQpVmxHR9BbcSpXk6E",
         },
-        {
-          name: "keywords",
-          content: me.keywords,
-        },
-        { property: "og:url", content: "https://kangangga.github.io" },
-        { property: "og:type", content: "website" },
-        { property: "og:title", content: me.title },
-        {
-          property: "og:image",
-          content: "https://kangangga.github.io/img/angga.png",
-        },
-        { property: "og:description", content: me.description },
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:site", content: me.username },
-        { name: "twitter:creator", content: me.username },
-        { name: "twitter:description", content: me.description },
+        // { property: "og:url", content: "https://kangangga.github.io" },
+        // { property: "og:type", content: "website" },
+        // { property: "og:title", content: me.title },
+        // {
+        //   property: "og:image",
+        //   content: "https://kangangga.github.io/img/angga.png",
+        // },
+        // { property: "og:description", content: me.description },
+        // { name: "twitter:card", content: "summary" },
+        // { name: "twitter:site", content: me.username },
+        // { name: "twitter:creator", content: me.username },
+        // { name: "twitter:description", content: me.description },
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" },
@@ -85,7 +82,11 @@ export default defineNuxtConfig({
     workbox: {
       enabled: true,
     },
+    icon: {
+      fileName: "./img/icon.webp",
+    },
     meta: {
+      lang: "id",
       name: me.name,
       author: me.name,
       description: me.description,
@@ -94,6 +95,7 @@ export default defineNuxtConfig({
         path: "/img/angga.png",
         width: 1200,
         height: 630,
+        type: "image/png",
       },
       ogSiteName: me.name,
       ogTitle: me.title,
@@ -106,6 +108,7 @@ export default defineNuxtConfig({
     manifest: {
       lang: "id",
       name: me.name,
+      short_name: "Angga",
       description: me.description,
       theme_color: "#4285f4",
       background_color: "#ffffff",
