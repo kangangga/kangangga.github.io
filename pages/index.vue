@@ -5,7 +5,7 @@
         <img
           alt="Angga Saputra"
           src="~/assets/img/angga.webp"
-          class="rounded-xl h-52 w-36 mb-4 mx-auto shadow-lg shadow-blue-200"
+          class="bg-white rounded-xl h-52 w-36 mb-4 mx-auto shadow-lg shadow-blue-200"
         />
         <h5 class="text-xl font-medium leading-tight mb-1">{{ me.name }}</h5>
 
