@@ -7,6 +7,7 @@
           src="~/assets/img/angga.webp"
           class="bg-white rounded-xl mb-4 mx-auto shadow-lg shadow-blue-200"
           width="200"
+          height="280"
         />
         <!-- h-52 w-36  -->
         <h5 class="text-xl font-medium leading-tight mb-1">{{ me.name }}</h5>
