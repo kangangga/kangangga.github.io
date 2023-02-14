@@ -9,7 +9,7 @@ const me = {
 };
 
 export default defineNuxtConfig({
-  // ssr: false,
+  ssr: false,
   css: [
     // "~/assets/css/main.css",
     // ...
@@ -17,7 +17,8 @@ export default defineNuxtConfig({
   plugins: [
     // ...
   ],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@kevinmarrec/nuxt-pwa", "@nuxtjs/tailwindcss"],
+
   app: {
     head: {
       htmlAttrs: {
@@ -68,9 +69,47 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     config: {
+      content: [
+        "./components/**/*.{js,vue,ts}",
+        "./layouts/**/*.vue",
+        "./pages/**/*.vue",
+        "./plugins/**/*.{js,ts}",
+        "./nuxt.config.{js,ts}",
+      ],
       theme: {
         extend: {},
       },
+    },
+  },
+  pwa: {
+    workbox: {
+      enabled: true,
+    },
+    meta: {
+      name: me.name,
+      author: me.name,
+      description: me.description,
+      ogHost: "https://kangangga.github.io",
+      ogImage: {
+        path: "/img/angga.png",
+        width: 1200,
+        height: 630,
+      },
+      ogSiteName: me.name,
+      ogTitle: me.title,
+      ogDescription: me.description,
+      ogUrl: "https://kangangga.github.io",
+      twitterCard: "summary",
+      twitterSite: me.username,
+      twitterCreator: me.username,
+    },
+    manifest: {
+      lang: "id",
+      name: me.name,
+      description: me.description,
+      theme_color: "#4285f4",
+      background_color: "#ffffff",
+      categories: ["portofolio", "personal", "developer"],
     },
   },
 });
