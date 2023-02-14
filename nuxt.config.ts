@@ -8,6 +8,49 @@ const me = {
     "angga saputra, angga, saputra, software engineer, software, developer, fullstack, full-stack, web, mobile, mobile app, mobile application, mobile developer, mobile engineer, mobile software engineer, mobile software developer, mobile software developer engineer",
 };
 
+const jsonLdPerson = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: me.name,
+  description: me.description,
+  givenName: "Angga",
+  familyName: "Saputra",
+  gender: "Male",
+  sameAs: "https://orcid.org/0000-0001-7794-2993",
+  url: "https://kangangga.github.io",
+  image: "https://kangangga.github.io/img/angga.png",
+  email: "masangga.com@gmail.com",
+};
+
+const jsonLdImageObject = {
+  "@context": "https://schema.org/",
+  "@type": "ImageObject",
+  contentUrl: "https://kangangga.github.io/img/angga.png",
+  license: "https://kangangga.github.io/license",
+  acquireLicensePage: "https://kangangga.github.io/how-to-use-my-images",
+  creditText: me.name,
+  creator: {
+    "@type": "Person",
+    name: me.name,
+    description: me.description,
+    givenName: "Angga",
+    familyName: "Saputra",
+    gender: "Male",
+    sameAs: "https://orcid.org/0000-0001-7794-2993",
+    url: "https://kangangga.github.io",
+    image: "https://kangangga.github.io/img/angga.png",
+    email: "masangga.com@gmail.com",
+  },
+  name: me.name,
+};
+
+const jsonLdLogo = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  url: "https://kangangga.github.io",
+  logo: "https://kangangga.github.io/img/angga.png",
+};
+
 export default defineNuxtConfig({
   ssr: false,
   css: [
@@ -61,6 +104,20 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" },
         { rel: "canonical", href: "https://kangangga.github.io" },
         // ...
+      ],
+      script: [
+        {
+          type: "application/ld-json",
+          children: JSON.stringify(jsonLdPerson),
+        },
+        {
+          type: "application/ld-json",
+          children: JSON.stringify(jsonLdImageObject),
+        },
+        {
+          type: "application/ld-json",
+          children: JSON.stringify(jsonLdLogo),
+        },
       ],
     },
   },
