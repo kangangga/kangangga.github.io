@@ -117,7 +117,7 @@ export default defineNuxtConfig({
   },
   security: {
     enabled: true,
-    hidePoweredBy: false,
+    hidePoweredBy: true,
 
     // Other options
   },
