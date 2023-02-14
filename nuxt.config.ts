@@ -26,9 +26,9 @@ export default defineNuxtConfig({
       title: me.name,
       charset: "utf-16",
       viewport: "width=device-width, initial-scale=1.0",
-
       meta: [
         { name: "description", content: me.description },
+        { name: "theme-color", content: "#4285f4" },
         {
           name: "google-site-verification",
           content: "077gzx1Lk-1iZJlyBEudhUr0JlQpVmxHR9BbcSpXk6E",

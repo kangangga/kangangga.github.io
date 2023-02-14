@@ -16,7 +16,7 @@
         </a>
 
         <div>
-          <p class="text-slate-800 mt-4 text-sm md:text-base">
+          <p class="text-slate-800 mt-4 text-sm md:text-base px-2">
             “Profesional IT yang berorientasi detail dengan pengalaman 8 tahun
             sebagai software engineer specialist dan system/network engineer.”
           </p>
