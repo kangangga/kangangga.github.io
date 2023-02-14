@@ -1,13 +1,18 @@
-import { defineNuxtConfig } from "nuxt";
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
+  css: [
+    // "~/assets/css/main.css",
+    // ...
+  ],
+  plugins: [
+    // ...
+  ],
   modules: ["@nuxtjs/tailwindcss"],
-  tailwindcss: {
-    viewer: false,
-    config: {
-      content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
+  runtimeConfig: {
+    apiSecret: "123",
+    public: {
+      apiBase: "/api",
     },
   },
 });
