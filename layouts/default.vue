@@ -23,9 +23,9 @@ useServerSeoMeta({
   ogTitle: () => me.name,
   description: () => `${me.description}`,
   ogDescription: () => `${me.description}`,
-  ogImage: "/angga.png",
   twitterCard: "summary_large_image",
-  icon: "/favicon.ico",
+  ogImage: "https://kangangga.github.io/img/angga.png",
+  icon: "https://kangangga.github.io/img/favicon.ico",
 });
 
 // useHead({

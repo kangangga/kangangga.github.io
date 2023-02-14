@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full">
-    <PDFViewer src="/cv-angga.pdf" />
+    <PDFViewer src="/pdf/cv-angga.pdf" />
   </div>
 </template>
 
