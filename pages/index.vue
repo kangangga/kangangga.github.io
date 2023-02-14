@@ -44,5 +44,67 @@
 const me = reactive({
   name: "Angga Saputra",
   slug: "@kangangga",
+  description:
+    "Saya adalah seorang software engineer dengan pengalaman lebih dari 7 tahun bekerja pada inisiatif pengembangan perangkat lunak yang kompleks. Saya bersemangat tentang pengembangan perangkat lunak dan saya menantikan untuk mengerjakan proyek baru dalam waktu dekat.",
+});
+
+const jsonLdPerson = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: me.name,
+  description: me.description,
+  givenName: "Angga",
+  familyName: "Saputra",
+  gender: "Male",
+  sameAs: "https://orcid.org/0000-0001-7794-2993",
+  url: "https://kangangga.github.io",
+  image: "https://kangangga.github.io/img/angga.png",
+  email: "masangga.com@gmail.com",
+};
+
+const jsonLdImageObject = {
+  "@context": "https://schema.org/",
+  "@type": "ImageObject",
+  contentUrl: "https://kangangga.github.io/img/angga.png",
+  license: "https://kangangga.github.io/license",
+  acquireLicensePage: "https://kangangga.github.io/how-to-use-my-images",
+  creditText: me.name,
+  creator: {
+    "@type": "Person",
+    name: me.name,
+    description: me.description,
+    givenName: "Angga",
+    familyName: "Saputra",
+    gender: "Male",
+    sameAs: "https://orcid.org/0000-0001-7794-2993",
+    url: "https://kangangga.github.io",
+    image: "https://kangangga.github.io/img/angga.png",
+    email: "masangga.com@gmail.com",
+  },
+  name: me.name,
+};
+
+const jsonLdLogo = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  url: "https://kangangga.github.io",
+  logo: "https://kangangga.github.io/img/angga.png",
+};
+
+useHead({
+  script: [
+    {
+      type: "application/ld-json",
+      children: JSON.stringify(jsonLdPerson),
+    },
+    {
+      type: "application/ld-json",
+      children: JSON.stringify(jsonLdImageObject),
+    },
+    {
+      type: "application/ld-json",
+      children: JSON.stringify(jsonLdLogo),
+    },
+  ],
 });
 </script>

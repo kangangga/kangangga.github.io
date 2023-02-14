@@ -80,7 +80,8 @@ export default defineNuxtConfig({
   },
   pwa: {
     workbox: {
-      enabled: true,
+      // enabled: import.meta.env.PROD ? true : false,
+      enabled: process.env.NODE_ENV === "development" ? false : true,
     },
     icon: {
       fileName: "./img/icon.webp",
