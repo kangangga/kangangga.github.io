@@ -5,11 +5,11 @@ const me = {
   description:
     "Saya adalah seorang software engineer dengan pengalaman lebih dari 7 tahun bekerja pada inisiatif pengembangan perangkat lunak yang kompleks. Saya bersemangat tentang pengembangan perangkat lunak dan saya menantikan untuk mengerjakan proyek baru dalam waktu dekat.",
   keywords:
-    "angga saputra, angga, saputra, software, engineer, developer, fullstack, full-stack, full stack, web, mobile, mobile app, mobile application, mobile developer, mobile engineer, mobile software engineer, mobile software developer, mobile software developer engineer, mobile software developer engineer, mobile software developer engineer, mobile softwa",
+    "angga saputra, angga, saputra, software engineer, software, developer, fullstack, full-stack, web, mobile, mobile app, mobile application, mobile developer, mobile engineer, mobile software engineer, mobile software developer, mobile software developer engineer",
 };
 
 export default defineNuxtConfig({
-  ssr: false,
+  // ssr: false,
   css: [
     // "~/assets/css/main.css",
     // ...
@@ -18,12 +18,6 @@ export default defineNuxtConfig({
     // ...
   ],
   modules: ["@nuxtjs/tailwindcss"],
-  runtimeConfig: {
-    apiSecret: "123",
-    public: {
-      apiBase: "/api",
-    },
-  },
   app: {
     head: {
       title: me.name,
