@@ -12,9 +12,5 @@
     "sass": "^1.51.0"
   },
   "license": "MIT",
-  "dependencies": {
-    "@pdftron/webviewer": "^8.11.0",
-    "pdfjs": "^2.4.7",
-    "pdfjs-dist": "^3.3.122"
-  }
+  "dependencies": {}
 }
