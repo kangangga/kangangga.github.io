@@ -20,6 +20,9 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   app: {
     head: {
+      htmlAttrs: {
+        lang: "id",
+      },
       title: me.name,
       charset: "utf-16",
       viewport: "width=device-width, initial-scale=1.0",

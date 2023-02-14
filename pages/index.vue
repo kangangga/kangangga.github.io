@@ -9,7 +9,7 @@
         />
         <h5 class="text-xl font-medium leading-tight mb-1">{{ me.name }}</h5>
 
-        <a href="https://github.com/kangangga" class="text-slate-500">
+        <a href="https://github.com/kangangga" class="text-slate-700">
           {{ me.slug }}
         </a>
 
