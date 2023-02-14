@@ -25,6 +25,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" },
+        { rel: "canonical", href: "https://kangangga.github.io" },
         // ...
       ],
     },

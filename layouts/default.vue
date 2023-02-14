@@ -20,14 +20,7 @@ useServerSeoMeta({
   ogDescription: () => `${me.description}`,
   twitterCard: "summary_large_image",
   ogImage: "https://kangangga.github.io/img/angga.png",
-  icon: "https://kangangga.github.io/img/favicon.ico",
-  link: [
-    {
-      rel: "canonical",
-      href: "https://kangangga.github.io/",
-    },
-    { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
-  ],
+  // icon: "https://kangangga.github.io/img/favicon.ico",
 });
 
 // useHead({
