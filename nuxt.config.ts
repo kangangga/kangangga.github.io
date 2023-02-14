@@ -34,6 +34,11 @@ export default defineNuxtConfig({
           content: "#4285f4",
         },
         {
+          name: "theme-color",
+          media: "(prefers-color-scheme: light)",
+          content: "#4285f4",
+        },
+        {
           name: "google-site-verification",
           content: "077gzx1Lk-1iZJlyBEudhUr0JlQpVmxHR9BbcSpXk6E",
         },
@@ -59,6 +64,13 @@ export default defineNuxtConfig({
         { rel: "canonical", href: "https://kangangga.github.io" },
         // ...
       ],
+    },
+  },
+  tailwindcss: {
+    config: {
+      theme: {
+        extend: {},
+      },
     },
   },
 });

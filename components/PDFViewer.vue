@@ -17,7 +17,7 @@
       <button
         type="button"
         @click="onDownload"
-        class="sm:hidden py-2 mr-2 mb-2 text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800"
+        class="xs:inline-block hidden py-2 mr-2 mb-2 text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 dark:bg-slate-600 dark:hover:bg-slate-700 focus:outline-none dark:focus:ring-slate-800"
       >
         Download
       </button>
