@@ -12,6 +12,8 @@ const me = reactive({
   username: "@kangangga",
   description:
     "Saya adalah seorang software engineer dengan pengalaman lebih dari 7 tahun bekerja pada inisiatif pengembangan perangkat lunak yang kompleks. Saya bersemangat tentang pengembangan perangkat lunak dan saya menantikan untuk mengerjakan proyek baru dalam waktu dekat.",
+  keywords:
+    "angga saputra, angga, saputra, software, engineer, developer, fullstack, full-stack, full stack, web, mobile, mobile app, mobile application, mobile developer, mobile engineer, mobile software engineer, mobile software developer, mobile software developer engineer, mobile software developer engineer, mobile software developer engineer, mobile softwa",
 });
 
 useHead({
@@ -20,8 +22,7 @@ useHead({
     { name: "description", content: me.description },
     {
       name: "keywords",
-      content:
-        "angga saputra, angga, saputra, software, engineer, developer, fullstack, full-stack, full stack, web, mobile, mobile app, mobile application, mobile developer, mobile engineer, mobile software engineer, mobile software developer, mobile software developer engineer, mobile software developer engineer, mobile software developer engineer, mobile softwa",
+      content: me.keywords,
     },
     { property: "og:url", content: "https://kangangga.github.io" },
     { property: "og:type", content: "website" },
