@@ -107,15 +107,15 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          type: "application/ld-json",
+          type: "application/ld+json",
           children: JSON.stringify(jsonLdPerson),
         },
         {
-          type: "application/ld-json",
+          type: "application/ld+json",
           children: JSON.stringify(jsonLdImageObject),
         },
         {
-          type: "application/ld-json",
+          type: "application/ld+json",
           children: JSON.stringify(jsonLdLogo),
         },
       ],
