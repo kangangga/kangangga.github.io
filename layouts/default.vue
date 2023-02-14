@@ -9,18 +9,33 @@
 <script setup>
 const me = reactive({
   name: "Angga Saputra",
-  slug: "@kangangga",
+  username: "@kangangga",
   description:
     "Saya adalah seorang software engineer dengan pengalaman lebih dari 7 tahun bekerja pada inisiatif pengembangan perangkat lunak yang kompleks. Saya bersemangat tentang pengembangan perangkat lunak dan saya menantikan untuk mengerjakan proyek baru dalam waktu dekat.",
 });
-useServerSeoMeta({
-  title: () => me.name,
-  ogTitle: () => me.name,
-  description: () => `${me.description}`,
-  ogDescription: () => `${me.description}`,
-  twitterCard: "summary_large_image",
-  ogImage: "https://kangangga.github.io/img/angga.png",
-  // icon: "https://kangangga.github.io/img/favicon.ico",
+
+useHead({
+  title: me.name,
+  meta: [
+    { name: "description", content: me.description },
+    {
+      name: "keywords",
+      content:
+        "angga saputra, angga, saputra, software, engineer, developer, fullstack, full-stack, full stack, web, mobile, mobile app, mobile application, mobile developer, mobile engineer, mobile software engineer, mobile software developer, mobile software developer engineer, mobile software developer engineer, mobile software developer engineer, mobile softwa",
+    },
+    { property: "og:url", content: "https://kangangga.github.io" },
+    { property: "og:type", content: "website" },
+    { property: "og:title", content: me.title },
+    {
+      property: "og:image",
+      content: "https://kangangga.github.io/img/angga.png",
+    },
+    { property: "og:description", content: me.description },
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:site", content: me.username },
+    { name: "twitter:creator", content: me.username },
+    { name: "twitter:description", content: me.description },
+  ],
 });
 
 // useHead({
