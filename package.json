@@ -13,5 +13,7 @@
     "sass": "^1.51.0"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "nuxt-security": "^0.10.2"
+  }
 }

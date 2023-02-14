@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   plugins: [
     // ...
   ],
-  modules: ["@kevinmarrec/nuxt-pwa", "@nuxtjs/tailwindcss"],
+  modules: ["nuxt-security", "@kevinmarrec/nuxt-pwa", "@nuxtjs/tailwindcss"],
 
   app: {
     head: {
@@ -114,5 +114,11 @@ export default defineNuxtConfig({
       background_color: "#ffffff",
       categories: ["portofolio", "personal", "developer"],
     },
+  },
+  security: {
+    enabled: true,
+    hidePoweredBy: false,
+
+    // Other options
   },
 });

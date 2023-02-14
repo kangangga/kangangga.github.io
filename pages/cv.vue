@@ -9,6 +9,6 @@ useSeoMeta({
   title: "CV Angga Saputra",
   description: "CV Angga Saputra",
   applicationName: "Angga Saputra",
-  colorScheme: "dark",
+  // colorScheme: "dark",
 });
 </script>
