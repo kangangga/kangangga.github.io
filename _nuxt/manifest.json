@@ -1,0 +1,30 @@
+{
+  "node_modules/nuxt/dist/app/entry.mjs": {
+    "file": "entry-bf9e8654.mjs",
+    "src": "node_modules/nuxt/dist/app/entry.mjs",
+    "isEntry": true,
+    "dynamicImports": [
+      "pages/contact.vue",
+      "pages/index.vue"
+    ],
+    "css": [
+      "entry.6282fa39.css"
+    ]
+  },
+  "pages/contact.vue": {
+    "file": "contact-63d10923.mjs",
+    "src": "pages/contact.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/index.vue": {
+    "file": "index-2fa4b853.mjs",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  }
+}
