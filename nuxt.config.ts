@@ -60,7 +60,12 @@ export default defineNuxtConfig({
   plugins: [
     // ...
   ],
-  modules: ["nuxt-security", "@kevinmarrec/nuxt-pwa", "@nuxtjs/tailwindcss"],
+  modules: [
+    ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
+    "nuxt-security",
+    "@kevinmarrec/nuxt-pwa",
+    "@nuxtjs/tailwindcss",
+  ],
 
   app: {
     head: {
@@ -178,5 +183,9 @@ export default defineNuxtConfig({
     hidePoweredBy: true,
 
     // Other options
+  },
+  sitemap: {
+    hostname: "https://kangangga.github.io",
+    cacheTime: 1,
   },
 });
