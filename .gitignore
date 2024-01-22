@@ -1,12 +1,9 @@
-# IDE Files
-#-------------------------
-/nbproject/
-.idea/*
-
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
-
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+/dist
+sw.*
